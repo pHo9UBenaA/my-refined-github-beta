@@ -67,6 +67,11 @@ const focus = (urlString: string): void => {
 
   const searchBoxClassPattern: SearchBoxClassPattern[] = [
     {
+      // advisories
+      matcher: (url) => url.pathname.startsWith("/advisories"),
+      className: "subnav-search-input",
+    },
+    {
       // orgs/<org>/teams
       matcher: (url) =>
         isOrgPath(url.pathname) && url.pathname.endsWith("/teams"),
