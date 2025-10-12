@@ -1,8 +1,8 @@
 /// <reference lib="deno.ns" />
 
-import { copy, ensureDir } from "jsr:@std/fs";
-import { build, stop } from "npm:esbuild";
-import { denoPlugins } from "jsr:@luca/esbuild-deno-loader";
+import { copy, ensureDir } from "@std/fs";
+import { build, stop } from "esbuild";
+import { denoPlugins } from "@luca/esbuild-deno-loader";
 
 const SRC_DIR = "./src";
 const DIST_DIR = "./dist";
