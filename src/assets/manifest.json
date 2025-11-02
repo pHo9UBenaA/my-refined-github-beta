@@ -11,9 +11,17 @@
   "commands": {
     "focus_search": {
       "suggested_key": {
-        "default": "Ctrl+Shift+F"
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+MacCtrl+F"
       },
       "description": "Focus on the search box of the current GitHub page"
+    },
+    "copy_ssh_uri": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+MacCtrl+S"
+      },
+      "description": "Copy SSH URI of the current repository"
     }
   },
   "permissions": ["activeTab", "scripting", "tabs"],
